@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+midhlaj_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+
+# Environment variables
+.env
+
+# Media files
+media/
+
+# Collected static files
+staticfiles/
+
+# VS Code settings
+.vscode/
