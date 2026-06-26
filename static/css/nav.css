@@ -26,7 +26,7 @@ header{
 
 .navbar{
     height:70px;
-    background:#3c85e6;
+    background:#ecaae3;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -35,7 +35,7 @@ header{
 }
 .logo img{
     height:100px;
-    width:100px;
+    width:200px;
    
    
 }
