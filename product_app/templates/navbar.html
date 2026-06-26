@@ -1,45 +1,111 @@
 {% load static %}
 
-<nav class="navbar">
+<header>
 
-<div class="logo">
-<img src="{% static 'image/navlogo.png' %}" att="navlogo">
-</div>
+    <!-- ================= NAVBAR ================= -->
 
-<ul class="nav-links">
+    <nav class="navbar">
 
-<li><a href="#">Home</a></li>
-<li><a href="#">Products</a></li>
-<li><a href="#">Categories</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Contact</a></li>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="{% url 'product_app:product_list' %}">
+                <img src="{% static 'image/navlogo.png' %}" alt="Logo">
+            </a>
+        </div>
 
-</ul>
+        <!-- Navigation -->
+        <ul class="nav-links">
+            <li><a href="{% url 'product_app:product_list' %}">Home</a></li>
+            <li><a href="{% url 'product_app:product_list' %}">Products</a></li>
+            <li><a href="{% url 'category_app:category_list' %}">Categories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
 
-<div class="search-box">
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="Search Products...">
+            <button type="submit">
+                <i class="fa-solid fa-search"></i>
+            </button>
+        </div>
 
-<input type="text" placeholder="Search Products">
+        <!-- Icons -->
+        <div class="icons">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
 
-<button>
-<i class="fa-solid fa-search"></i>
-</button>
+        <!-- Mobile Menu -->
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-</div>
+    </nav>
 
-<div class="icons">
+    <!-- ================= CATEGORY MENU ================= -->
 
-<a href="#"><i class="fa-regular fa-heart"></i></a>
+    <div class="category-menu">
 
-<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#" class="category-btn active">
+            <i class="fa-solid fa-border-all"></i>
+            <span>All</span>
+        </a>
 
-<a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-shirt"></i>
+            <span>Fashion</span>
+        </a>
 
-</div>
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-couch"></i>
+            <span>Home</span>
+        </a>
 
-<div class="menu-btn">
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-spa"></i>
+            <span>Beauty</span>
+        </a>
 
-<i class="fa-solid fa-bars"></i>
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Electronics</span>
+        </a>
 
-</div>
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-chair"></i>
+            <span>Furniture</span>
+        </a>
 
-</nav>
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-football"></i>
+            <span>Sports</span>
+        </a>
+
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Grocery</span>
+        </a>
+
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-gift"></i>
+            <span>Gifts</span>
+        </a>
+
+        <a href="#" class="category-btn">
+            <i class="fa-solid fa-book"></i>
+            <span>Books</span>
+        </a>
+
+    </div>
+
+</header>
+
+<!-- Page Content -->
+<main class="main-content">
+
+    {% block content %}
+    {% endblock %}
+
+</main>
