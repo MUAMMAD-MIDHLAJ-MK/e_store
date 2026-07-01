@@ -25,7 +25,10 @@ urlpatterns = [
     path('', include('costomer_app.urls')),
     path('product/', include('product_app.urls')),
     path('category/', include('category_app.urls')),
+<<<<<<< HEAD
     path("cart/", include("cart.urls")),
+=======
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
 ]
 if settings.DEBUG:
     urlpatterns += static(

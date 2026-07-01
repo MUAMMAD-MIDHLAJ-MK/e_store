@@ -31,7 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
     'cart',
+=======
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
     'category_app',
     'product_app',
     'costomer_app',

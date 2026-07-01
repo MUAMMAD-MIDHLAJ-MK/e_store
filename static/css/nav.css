@@ -177,6 +177,7 @@ header{
 }
 
 /* ================= MOBILE ================= */
+<<<<<<< HEAD
 /* ================= Mobile Menu ================= */
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -364,10 +365,18 @@ header{
     font-size:28px;
     cursor:pointer;
     color:#333;
+=======
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
 }
 
 @media(max-width:992px){
 
+<<<<<<< HEAD
     .menu-btn{
         display:block;
         z-index:1001;
@@ -377,14 +386,26 @@ header{
         display:none;
     }
 
+=======
+    .nav-links,
+    .search-box,
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
     .icons{
         display:none;
     }
 
+<<<<<<< HEAD
+=======
+    .menu-btn{
+        display:block;
+    }
+
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
     .navbar{
         padding:0 20px;
     }
 
+<<<<<<< HEAD
 
     /* Mobile Navigation */
 
@@ -429,11 +450,19 @@ header{
     .nav-links li a:hover{
         background:#2874f0;
         color:#fff;
+=======
+    .logo img{
+        height:100px;
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
     }
 
     .category-menu{
         justify-content:flex-start;
+<<<<<<< HEAD
         padding:0 10px;
+=======
+        padding:0 15px;
+>>>>>>> 4775cb2c7aa204a1d6bdd9ee96772186d446a701
     }
 
 }
